@@ -27,9 +27,6 @@ const App = (props) => {
       const filteredProducts = products.filter(
         (product) => product.productCategory === currentFilter
       );
-      /* const filteredProducts = products.filter(product => {
-      return product.productCategory === filterCategory
-    }); */
       setFilteredProducts(filteredProducts);
     }
   };
@@ -42,15 +39,30 @@ const App = (props) => {
 
   return (
     <Fragment>
-      <Fridge addProduct={addProduct} />
-      {products.length > 0 && (
-        <Filter
-          applyFilter={setCurrentFilter}
-          categories={categories}
-          resetFilter={resetFilter}
-        />
-      )}
-      <RenderProducts filteredProducts={filteredProducts} />
+      <div className="main-wrapper">
+        <header>
+          <h1>Fridge</h1>
+        </header>
+        <div className="flex-wrapper">
+          <section className="section-left space">
+            <Fridge addProduct={addProduct} />
+          </section>
+          <div className="section-right-wrapper">
+            <section className="section-right-top space">
+              {products.length > 0 && (
+                <Filter
+                  applyFilter={setCurrentFilter}
+                  categories={categories}
+                  resetFilter={resetFilter}
+                />
+              )}
+            </section>
+            <section className="section-right-bottom space">
+              <RenderProducts filteredProducts={filteredProducts} />
+            </section>
+          </div>
+        </div>
+      </div>
     </Fragment>
   );
 };

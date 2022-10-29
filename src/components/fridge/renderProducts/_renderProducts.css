@@ -1,0 +1,21 @@
+.product-list-container {
+    display: flex;
+    justify-content: center;
+}
+
+.product-list-content {
+    align-items: center;
+    padding: 5px;
+    background-color: rgba(222,222,222,.3);
+    border: 2px solid rgba(222,222,222,.3);
+    border-radius: 5px;
+    margin: 10px;
+    white-space: nowrap;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

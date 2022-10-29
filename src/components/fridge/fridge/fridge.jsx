@@ -13,7 +13,6 @@ const Fridge = (props) => {
 
   return (
     <div className="form-container">
-      <h1>Fridge</h1>
       <form onSubmit={submitForm}>
         <input
           required

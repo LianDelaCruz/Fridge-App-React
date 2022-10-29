@@ -1,2 +1,8 @@
  @import'./App.css'; /*this is how you link css to index.css which is the main css file under folder STYLE*/
-@import '../components/fridge/fridge/_fridge.css'
+@import '../components/fridge/fridge/_fridge.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Raleway:wght@100&display=swap');
+
+@import '../components/fridge/renderProducts/_renderProducts.css';
+
+@import '../components/fridge/filter/_filter.css'

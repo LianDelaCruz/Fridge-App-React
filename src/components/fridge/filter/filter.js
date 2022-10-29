@@ -7,7 +7,7 @@ class Filter extends React.Component {
   };
   render() {
     return (
-      <div>
+      <div className="button-filter-wrapper">
         {this.props.categories.map((category, index) => {
           return (
             <button
