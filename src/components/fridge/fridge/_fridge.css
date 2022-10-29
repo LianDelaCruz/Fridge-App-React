@@ -1,0 +1,25 @@
+.form-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px black;
+    margin-top: 100px;
+    padding: 0px 500px
+} 
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    
+}
+
+.form-input {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
